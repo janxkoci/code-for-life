@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
 
-/>/ {n++}
-!/>/ {l += length}
+/^>/ {n++}
+!/^>/ {l += length}
 END {print l/n}

@@ -12,7 +12,7 @@ len::Int = 0
 # read STDIN
 for line in eachline(stdin)
 	#print("Found $line")
-	if(occursin(">", line) == true)
+	if(occursin("^>", line) == true)
 		global nseq += 1
 	else
 		global len += length(line)
